@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style12.css" />
+    <script
+      src="https://kit.fontawesome.com/00ea9ac778.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Linging SwiperJS CSs-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Ruchika Funnishing</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <div id="home" class="headersection">
+      <div class="hero_text">
+        <p class="hero_small_text">WELCOME TO RUCHIKA FURNISHINGS</p>
+        <h1 class="hero_big_text">
+          Build An Quality <br />
+          Carpenter Services
+        </h1>
+        <button class="btn"><a href="#contact">Get Quote</a></button>
+      </div>
+    </div>
+    <div class="headernav">
+      <header class="navbar">
+        <div class="logo">
+          <a href="#home"><img src="Ruchika logo.png" alt="Ruchika Logo" /></a>
+        </div>
+        <nav class="sidebar">
+          <i
+            onclick="hideSidebar()"
+            class="fa-solid fa-square-xmark hide-bar"
+          ></i>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#give">We Give</a>
+          <a href="#service">Services</a>
+          <a href="#project">Projects</a>
+        </nav>
+        <div class="desktop-menu">
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#give">We Give</a>
+            <a href="#service">Services</a>
+            <a href="#project">Projects</a>
+          </nav>
+          <button class="btn1"><a href="#contact">Contact</a></button>
+        </div>
+        <div class="menu-btn">
+          <i onclick="showSidebar()" class="fa-solid fa-bars menu-bar"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section id="give" class="why-choose-us-container">
+      <div class="why-choose-us-con">
+        <!-- Box 1 -->
+        <div class="why-choose-us-box">
+          <div class="why-choose-us-card">
+            <img class="chair" src="dining.png" alt="" />
+            <h5 class="fw-bold">Attention to Detail</h5>
+            <p>
+              We make each item with care, checking every part to be sure it
+              looks good, works well, and lasts a long time.
+            </p>
+          </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="why-choose-us-box">
+          <div class="why-choose-us-card">
+            <img class="timber" src="timber.png" alt="" />
+            <h5 class="fw-bold">High-Quality Materials</h5>
+            <p>
+              We use strong, trusted materials so your furniture is safe, looks
+              great, and stays in good shape for years.
+            </p>
+          </div>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="why-choose-us-box">
+          <div class="why-choose-us-card">
+            <img class="personal" src="adjustment.png" alt="" />
+            <h5 class="fw-bold">Personalized Service</h5>
+            <p>
+              You get strong, stylish furniture at a fair price, so you don't
+              have to spend too much to get what you love.
+            </p>
+          </div>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="why-choose-us-box">
+          <div class="why-choose-us-card">
+            <img class="discount" src="discount.png" alt="" />
+            <h5 class="fw-bold">Affordable Price</h5>
+            <p>
+              High-quality carpentry services at an affordable price, crafted with precision and care to bring lasting value to your home or business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="services-container auto-scroll">
+      <div class="services-header">
+        <h2>OUR SERVICES</h2>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-slider-button swiper-button-prev hide-b">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="swiper-slider-button swiper-button-next hide-b">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+
+      <div class="services-box">
+        <div class="services-card">
+          <img src="room-furniture.png" alt="Custom Furniture Icon" />
+          <h5>Custom Furniture Design</h5>
+          <p>
+            Custom room furniture, cabinets, and more—crafted by hand to fit
+            your space, style, and everyday needs.
+          </p>
+          <a href="#contact">Get Contact</a>
+        </div>
+
+        <div class="services-card">
+          <img
+            class="reno-image"
+            src="room-renovation.png"
+            alt="Home Renovation Icon"
+          />
+          <h5>Home Renovations & Remodeling</h5>
+          <p>
+            Upgrade kitchens, basements, and more with expert carpentry tailored
+            to your home's style.
+          </p>
+          <a href="#contact">Get Contact</a>
+        </div>
+
+        <div class="services-card">
+          <img src="door.png" alt="Door Icon" />
+          <h5>Door & Window Installation</h5>
+          <p>
+            Secure, efficient door and window framing and fitting—done with
+            precision and professionalism.
+          </p>
+          <a href="#contact">Get Contact</a>
+        </div>
+
+        <div class="services-card">
+          <img src="cabinate.png" alt="Shelving Icon" />
+          <h5>Built-In Cabinets & Shelving</h5>
+          <p>
+            Custom-built cabinets and shelves to add smart, stylish storage that
+            fits your space perfectly.
+          </p>
+          <a href="#contact">Get Contact</a>
+        </div>
+
+        <div class="services-card">
+          <img src="molding.png" alt="Trim Icon" />
+          <h5>Trim and Molding Work On Wood</h5>
+          <p>
+            Add elegance with detailed crown molding, baseboards, and trim work.
+          </p>
+          <a href="#contact">Get Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Here we start code of our about us section -->
+    <section id="about" class="about-us">
+      <div class="about-us-container">
+        <div class="about-us-image">
+          <img src="about-us-image.JPG" alt="About Us Image" />
+
+          <!-- Move experience box here -->
+          <div class="experience">
+            <h1>30</h1>
+            <p>Year of Experience</p>
+          </div>
+        </div>
+        <div class="about-us-text">
+          <h2>About Us</h2>
+          <hr />
+          <p>
+            Ruchika Furnishings, led by Gokul Prasad, is a family-owned
+            carpentry business with over 30 years of experience. <br />
+            <span id="aboutContent" class="show-in-mobile about-content">
+              Our craft is more than just work—it's a legacy passed down from my
+              grandfather to my father, and then to me. <br />
+              This tradition of skill and dedication inspires every piece we create. <br />
+              From custom furniture to home renovations and storage solutions,
+              we blend inherited talent with modern techniques to deliver
+              woodwork that's functional, beautiful, and built to last.
+            </span>
+          </p>
+
+          <div class="about-dropdown">
+            <i id="aboutToggle" onclick="toggleAbout()" class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Here is the HTML code for Project Container -->
+    <section id="project" class="project-container swiper">
+      <h2>OUR PROJECTS</h2>
+      <div class="project-wrapper">
+        <ul class="project-list swiper-wrapper">
+          <li class="project-item swiper-slide">
+            <img class="project-img" src="project-1.png" alt="" />
+          </li>
+          <li class="project-item swiper-slide">
+            <img class="project-img" src="project-2.png" alt="" />
+          </li>
+          <li class="project-item swiper-slide">
+            <img class="project-img" src="project-3.png" alt="" />
+          </li>
+          <li class="project-item swiper-slide">
+            <img class="project-img" src="project-4.png" alt="" />
+          </li>
+          <li class="project-item swiper-slide">
+            <img class="project-img" src="project-5.png" alt="" />
+          </li>
+          <li class="project-item swiper-slide">
+            <img class="project-img" src="project-7.png" alt="" />
+          </li>
+          <li class="project-item swiper-slide">
+            <img class="project-img" src="project-8.png" alt="" />
+          </li>
+          <li class="project-item swiper-slide">
+            <img class="project-img" src="project-9.png" alt="" />
+          </li>
+          <li class="project-item swiper-slide">
+            <img class="project-img" src="project-10.png" alt="" />
+          </li>
+          <li class="project-item swiper-slide">
+            <img class="project-img" src="project-12.jpg" alt="" />
+          </li>
+          <li class="project-item swiper-slide">
+            <img class="project-img" src="project-13.jpg" alt="" />
+          </li>
+        </ul>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-slider-button swiper-button-prev"></div>
+        <div class="swiper-slider-button swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!--Here is the section of customer Review-->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="title">What our customers says</h2>
+        </div>
+        <div class="review-content">
+          <div class="swiper testimonials-slider js-testimonials-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="review-image-1.PNG" alt="" />
+                  <div class="text-box">
+                    <h3 class="name">Gopesh Suthar</h3>
+                  </div>
+                </div>
+                <p>
+                  Beautiful designs, great quality, and excellent service. Ruchika Furnishings never disappoints.
+                </p>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="review-image-2.PNG" alt="" />
+                  <div class="text-box">
+                    <h3 class="name">Vijay Shankar</h3>
+                  </div>
+                </div>
+                <p>
+                  Ruchika Furnishings transformed my home with elegant and durable furniture. Highly recommended!
+                </p>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="review-image-3.PNG" alt="" />
+                  <div class="text-box">
+                    <h3 class="name">Govind Vyas
+                    </h3>
+                  </div>
+                </div>
+                <p> Every design detail was exactly as I had imagined. Ruchika Furnishings turned my ideas into reality effortlessly.</p>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="review-image-4.PNG" alt="" />
+                  <div class="text-box">
+                    <h3 class="name">Shyam Kulariya</h3>
+                  </div>
+                </div>
+                <p>
+                  The craftsmanship and attention to detail at Ruchika Furnishings is unmatched. My furniture is not only beautiful but also built to last.
+                </p>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="review-image-5.PNG" alt="" />
+                  <div class="text-box">
+                    <h3 class="name">Babu Suthar</h3>
+                  </div>
+                </div>
+                <p>
+                  Ruchika Furnishings transformed my home with elegant and durable furniture. Highly recommended!
+                </p>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="review-image-6.png" alt="" />
+                  <div class="text-box">
+                    <h3 class="name">Umesh Kulariya</h3>
+                  </div>
+                </div>
+                <p>
+                  The craftsmanship left me speechless. Every detail is perfect, and my home feels more elegant than ever.
+                </p>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="review-image-7.PNG" alt="" />
+                  <div class="text-box">
+                    <h3 class="name">Raju Ashdev</h3>
+                  </div>
+                </div>
+                <p>
+                  Whenever I look at my furniture, I feel proud of the choice I made. It reflects class, comfort, and fine workmanship.
+                </p>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination js-testimonials-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Here we start code of our footer section -->
+    <footer id="contact">
+      <!-- Top CTA section -->
+      <div class="footer-cta">
+        <h2>Masters of Craft, Leaders in Carpentry</h2>
+      </div>
+
+      <!-- Main Footer -->
+      <div class="footer-main">
+        <div class="footer-logo-social">
+          <div class="footerlogo">
+            <img class="logoi" src="Ruchika logo.png" />
+          </div>
+          <div class="social-icons">
+            <a href="#"><img src="youtube.png" alt="" /></a>
+            <a href="#"><img src="telegram.png" alt="" /></a>
+            <a href="#"><img src="whatsapp.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <center><hr></center>
+            <ul>
+              <li><i class="fa-solid fa-user-tie"></i> Gokul Prasad Suthar</li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i> Vishwakarma
+                Gate,Bikaner(Raj.)
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                ruchikafurnishings2006@gmail.com
+              </li>
+              <li><i class="fa-solid fa-phone-volume"></i> 7891182576</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Call button -->
+      <a href="tel:+917891182576" class="call-button">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+
+      <!-- Home button -->
+      <div class="home">
+        <i class="fa-solid fa-up-long"></i>
+      </div>
+
+      <!-- WhatsApp button -->
+      <a
+        href="https://wa.me/917891182576"
+        target="_blank"
+        class="whatsapp-button"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <hr style="color: #ffefcd;"> 
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Ruchika Furnishings. All rights reserved | Designed by
+          Mohit Suthar
+        </p>
+      </div> 
+    </footer>
+
+    <!--Linking SwiperJS script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Linking custom javascript-->
+    <script src="style.js"></script>
+  </body>
+</html>

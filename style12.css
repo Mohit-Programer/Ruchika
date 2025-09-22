@@ -1,0 +1,1306 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,600;1,600&display=swap");
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: white;
+  color: #222;
+  line-height: 1.6;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Header Section ===== */
+.headersection {
+  margin-top: 0px;
+  height: 800px; /* Full screen height */
+  width: 100%;
+  background: url("Untitled\ design\ \(2\).png") no-repeat center top;
+  background-size: cover;
+  position: relative;
+}
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 300px;
+  padding-left: 100px;
+  gap: 20px;
+}
+.hero_small_text {
+  font-size: 20px;
+  font-weight: 800; /* Regular */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.hero_big_text {
+  font-weight: 700; /* Bold */
+  color: white;
+  font-size: 80px;
+  line-height: 1;
+}
+.btn,
+.btn a {
+  text-decoration: none;
+  font-size: 19px;
+  background-color: black;
+  color: #ffefcd;
+  font-weight: 600;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+.btn:hover,
+.btn a:hover {
+  background: #ffefcd;
+  color: black;
+}
+
+/* ===== Navbar ===== */
+.headernav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 75px;
+  background: black;
+  box-shadow: 0 2px 6px rgba(93, 56, 27, 0.4);
+  position: fixed;
+  z-index: 1000;
+  top: 10px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 250px;
+}
+.navbar nav a {
+  font-size: 16px;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #ffefcd;
+  font-weight: 700;
+}
+.navbar nav a:hover {
+  border-bottom: 3px solid #ffefcd;
+  width: fit-content;
+}
+nav a:first-child {
+  margin-right: auto;
+}
+.desktop-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+.menu-btn {
+  display: none;
+}
+.menu-bar {
+  color: #ffefcd;
+  font-size: 20px;
+  margin-right: 30px;
+}
+.hide-bar {
+  align-self: flex-end;
+  color: #ffefcd;
+  font-size: 30px;
+  margin-right: 30px;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  z-index: 999;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: -10px 0 10px rgba(255, 239, 205, 0.2);
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+/* ===== Buttons ===== */
+.btn1,
+.btn1 a {
+  text-decoration: none;
+  text-align: center;
+  background: #ffefcd;
+  color: #5d381b;
+  font-size: 19px;
+  font-weight: 600;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn1 {
+  margin-right: 30px;
+}
+
+/* Container for the Why choose us section */
+.why-choose-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.why-choose-us-con {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.why-choose-us-box {
+  display: flex;
+  justify-content: center;
+}
+.why-choose-us-card {
+  background-color: #a66d4e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 30px;
+  gap: 15px;
+  padding: 20px;
+  width: 100%;
+  min-height: 280px;
+  box-sizing: border-box;
+  color: #ffefcd;
+  transition: transform 0.3s ease;
+}
+.why-choose-us-card:hover {
+  transform: translateY(-10px);
+}
+.why-choose-us-card img {
+  width: 60px;
+}
+.why-choose-us-card h5 {
+  font-size: 23px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 26px;
+}
+.why-choose-us-card p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Container for the service we provide section */
+.services-container {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
+}
+.services-header {
+  position: relative;
+  display: flex;
+  justify-content: center; /* keep title in center */
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.services-header h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+.services-header .swiper-slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  background-color: #a66d4e;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-header .swiper-slider-button i {
+  color: #ffefcd;
+}
+.swiper-button-prev {
+  left: 10px; /* left side of heading */
+}
+.swiper-button-next {
+  right: 10px; /* right side of heading */
+}
+.swiper-slider-button::after {
+  content: "";
+}
+
+.services-box {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: auto;
+}
+.services-box::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+.services-card {
+  background-color: #a66d4e;
+  width: 85vw;
+  max-width: 320px;
+  min-width: 260px;
+  height: 380px;
+  box-sizing: border-box;
+  color: #ffefcd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+.services-card:hover {
+  transform: translateY(-10px);
+}
+.services-card img {
+  width: 260px;
+  height: 200px;
+  margin-top: -35px;
+  box-shadow: 4px 4px 9px -1px rgba(255, 239, 205, 0.35);
+}
+img.reno-image {
+  margin-left: -7px;
+  width: 267px;
+}
+.services-card h5 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 26px;
+  padding-left: 20px;
+}
+.services-card p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+.services-card a {
+  text-decoration: none;
+  border: none;
+  margin: 10px 20px;
+  background-color: black;
+  color: #ffefcd;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+/* Container for the about us section */
+.about-us-container {
+  background-image: url("brown-wood-textured-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.about-us-container {
+  display: flex;
+  gap: 50px;
+  padding: 60px;
+}
+.about-us-image {
+  width: 500px;
+  height: 350px;
+  position: relative;
+  z-index: 2;
+}
+.about-us-image img {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+}
+.about-us-text h2 {
+  color: #ffefcd;
+}
+.about-us-text hr {
+  width: 110px;
+  color: #ffefcd;
+  height: 5px;
+  background-color: #ffefcd;
+}
+.about-us-text p {
+  color: #ffefcd;
+  padding: 40px 30px;
+  line-height: 26px;
+}
+.about-dropdown {
+  display: none;
+}
+.experience {
+  background-color: white;
+  width: 170px;
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px;
+  bottom: -30px;
+  right: -30px;
+}
+.experience h1 {
+  font-size: 45px;
+  color: #a66d4e;
+}
+.experience p {
+  font-size: 16px;
+  color: #a66d4e;
+  font-weight: 800;
+  white-space: nowrap; /* Prevent text from breaking into a new line */
+}
+
+/* here is the style for the Pojects we have done section */
+.project-container h2 {
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.project-wrapper {
+  margin: 0px 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-list {
+  list-style: none;
+}
+
+.project-list .project-item .project-img {
+  user-select: none;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 1px 2px 11px -3px rgba(0, 0, 0, 0.75);
+}
+
+.project-list .project-item .project-img:active {
+  cursor: grabbing;
+}
+
+.project-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background-color: #a66d4e;
+}
+
+.project-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.project-wrapper .swiper-slider-button {
+  color: #a66d4e;
+  margin-top: -35px;
+}
+
+/* Here is the style for the Customer Review Section */
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-header .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+.testimonials {
+  padding: 60px 0;
+}
+.testimonials-item {
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 30px;
+}
+.testimonials-item .info {
+  display: flex;
+  align-items: center;
+}
+.testimonials-item .info img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.testimonials-item .name {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: black;
+  line-height: 1.2;
+}
+.testimonials-item .job {
+  text-transform: capitalize;
+  color: black;
+}
+.testimonials-item p {
+  margin-top: 20px;
+  color: hsl(0, 0% 40%);
+}
+.testimonials-item .ratings {
+  margin-top: 15px;
+  font-size: 14px;
+  color: hsl(36, 88%, 66%);
+}
+.testimonials .swiper-pagination {
+  position: relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+.testimonials .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: #a66d4e;
+}
+
+/* Here is the style of the Footer section */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Winky Rough", sans-serif;
+  position: relative;
+}
+.footer-cta {
+  background-color: #a66d4e;
+  color: #ffefcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 900px;
+  padding: 1.2em;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  z-index: 2;
+  top: -40px;
+  /* top: 2030px; */
+}
+.footer-cta h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+.footer-main {
+  background-color: black;
+  margin: 0px;
+  padding: 2em;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.footer-logo-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+.footerlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 80px;
+  margin-left: -15px;
+}
+.logoi {
+  width: 300px;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+.social-icons img {
+  width: 38px;
+}
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-col h4 {
+  color: #ffefcd;
+  font-size: 2em;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.footer-col li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffefcd;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.footer-col li i {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* Here is the style and set of the quick button */
+
+.call-button {
+  text-decoration: none;
+  position: fixed;
+  bottom: 140px;
+  right: 30px;
+  display: flex;
+  z-index: 999;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.call-button:hover {
+  transform: scale(1.1);
+}
+
+.home {
+  position: fixed;
+  bottom: 60px;
+  right: 19px;
+  z-index: 999;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.home:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button {
+  text-decoration: none;
+  position: fixed;
+  bottom: 60px;
+  left: 19px;
+  display: flex;
+  z-index: 999;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.home i,
+.whatsapp-button i,
+.call-button i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.footer-bottom,
+.footer-bottom p {
+  background-color: black;
+  width: 100%;
+  color: #ffefcd;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px;
+}
+
+/*----------------------------------------------------------------------------*/
+/* ===== Here we start doing responsive ===== */
+
+/* ===== Here we do responsive for screen more than 1600px ===== */
+@media only screen and (min-width: 1800px) {
+  .navbar {
+    width: 1800px;
+  }
+  .service-con {
+    grid-template-columns: repeat(4, 1fr); /* or 6 if you have more items */
+  }
+  .services-box {
+    justify-content: center;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 1600px ===== */
+@media only screen and (max-width: 1600px) {
+  .navbar {
+    width: 1000px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .hide-b {
+    display: none !important; /* force hide even if Swiper sets it */
+  }
+}
+@media only screen and (min-width: 1230px) {
+  .experience p {
+    font-size: 15.5px;
+  }
+  .headersection {
+    background-image: url("Untitled\ design\ \(5\).png");
+  }
+}
+
+/* ===== Here we do responsive for screen less than 1100px ===== */
+@media only screen and (max-width: 1100px) {
+  .navbar {
+    width: 850px;
+  }
+  .desktop-menu {
+    gap: 40px;
+  }
+  .desktop-menu nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    font-weight: 900;
+  }
+  .services-card {
+    width: 280px;
+  }
+  .about-us-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 80px;
+  }
+  .footer-cta {
+    width: 700px;
+  }
+}
+
+/* Between 831px and 1100px */
+@media (max-width: 1100px) and (min-width: 831px) {
+  /* .why-choose-us-con {
+    grid-template-columns: repeat(2, 1fr); 
+  } */
+
+  .why-choose-us-con > :last-child {
+    grid-column: 1 / -1; /* span both columns */
+    display: flex;
+    justify-content: center; /* center it */
+  }
+
+  .why-choose-us-con > :last-child > * {
+    max-width: 250px; /* keep same width as others */
+    width: 100%;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 850px ===== */
+@media only screen and (max-width: 850px) {
+  .headersection {
+    background-image: url("hero-image\ -\ tablet.png");
+  }
+  .navbar {
+    width: fit-content;
+  }
+  .desktop-menu {
+    gap: 10px;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 771px ===== */
+@media only screen and (max-width: 771px) {
+  .desktop-menu {
+    display: none;
+  }
+  .navbar {
+    width: 650px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .services-card {
+    width: 300px;
+  }
+  .services-card h5 {
+    font-size: 22px;
+  }
+  .services-card p {
+    font-size: 15px;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 700px ===== */
+@media only screen and (max-width: 700px) {
+  footer {
+    min-height: 440px;
+  }
+  .footer-cta {
+    width: 550px;
+  }
+  .footer-logo-social {
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 150px;
+  }
+
+  .social-icons {
+    align-self: flex-end;
+  }
+  .show-in-mobile {
+    display: none;
+  }
+  .about-dropdown {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -50px;
+  }
+  .about-dropdown i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a66d4e;
+    padding: 5px 10px;
+    background-color: #ffefcd;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .about-us-text p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .about-content {
+    display: block; /* important: allow max-height to expand */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 1s ease, opacity 1s ease;
+  }
+
+  .about-content.show {
+    max-height: 1000px; /* enough to fit content */
+    opacity: 1;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 771px ===== */
+@media only screen and (max-width: 652px) {
+  .headersection {
+    background-image: url("hero-section-image.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero_text {
+    margin-left: -60px;
+  }
+  .hero_big_text {
+    font-size: 55px;
+  }
+  .navbar {
+    width: fit-content;
+    gap: 300px;
+  }
+  .hero_small_text {
+    color: white;
+    font-size: 25px;
+  }
+  .btn,
+  .btn a {
+    background-color: #ffefcd;
+    color: black;
+    font-size: 22px;
+  }
+  .service-container {
+    margin-top: 0px;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 600px ===== */
+@media only screen and (max-width: 600px) {
+  .logo img {
+    width: 200px;
+    height: 70px;
+    padding-left: 25px;
+  }
+  .about-us-image,
+  .about-us-image img {
+    width: 400px;
+    height: 300px;
+  }
+  .about-us-container {
+    padding: 60px;
+  }
+  .project-wrapper {
+    margin: 0px 10px 25px;
+  }
+  .project-wrapper .swiper-slider-button {
+    display: none;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 555px ===== */
+@media only screen and (max-width: 555px) {
+  .hero_text {
+    margin-left: -60px;
+  }
+  .hero_big_text {
+    font-size: 53px;
+  }
+  .hero_text {
+    margin-left: -10px;
+  }
+  .hero_big_text {
+    font-size: 45px;
+  }
+  .btn {
+    margin-bottom: 40px;
+  }
+  .about-us-text {
+    margin: -40px;
+  }
+  .footer-cta {
+    width: 400px;
+  }
+  .footer-cta h2 {
+    text-align: center;
+  }
+  .footer-main {
+    margin-top: 50px;
+  }
+  .footer-logo-social {
+    gap: 60px;
+    margin-right: 5px;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 500px ===== */
+@media only screen and (max-width: 500px) {
+  .navbar {
+    width: fit-content;
+    gap: 180px;
+  }
+  .hero_text {
+    margin-left: -60px;
+  }
+  .btn {
+    margin: 60px 0px 0px 0px;
+  }
+  .about-us-image,
+  .about-us-image img {
+    width: 280px;
+    height: 180px;
+  }
+  .experience {
+    width: 120px;
+    height: 100px;
+  }
+  .experience h1 {
+    font-size: 30px;
+  }
+  .experience p {
+    font-size: 13px;
+  }
+  .footer-cta {
+    top: 8px;
+    border-radius: 15px;
+  }
+  .footer-main {
+    margin-top: 65px;
+  }
+  .logoi {
+    width: 350px;
+  }
+  .footer-logo-social {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .social-icons {
+    align-self: center;
+    margin-right: 8px;
+  }
+  .footer-col h4 {
+    margin-top: 30p x;
+    text-align: center;
+  }
+  .section-header .swiper-slider-button {
+    top: 80px;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 445px ===== */
+@media only screen and (max-width: 445px) {
+  .navbar {
+    width: fit-content;
+    gap: 100px;
+  }
+  .footer-cta {
+    width: 350px;
+    padding: 10px;
+  }
+  .footer-logo-social {
+    gap: 20px;
+  }
+  .footer-col p {
+    font-size: 10px;
+  }
+  .experience {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .navbar img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9em;
+  }
+  .btn {
+    margin-bottom: 60px;
+  }
+  .hero_text h1 {
+    font-size: 3.5em;
+    line-height: 66px;
+  }
+
+  .hero_text p {
+    margin-top: 50px;
+    font-size: 1.5em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .swiper-slider-button {
+    margin-top: 30px;
+  }
+  section,
+  .content,
+  .experience {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .about-us-text {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .about-us-text h2 {
+    font-size: 1.5em;
+    margin-bottom: -10px;
+    line-height: 1.3;
+    border-bottom: 2px solid #ffefcd;
+  }
+  .about-us-text hr {
+    display: none;
+  }
+  .about-us-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0 -80px;
+  }
+  .about-dropdown i {
+    margin-right: -50px;
+    margin-bottom: -40px;
+  }
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-col {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-col h4 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .footer-col ul {
+    padding-top: 30px;
+    margin: 0;
+  }
+
+  .footer-col li {
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .footer-col li i {
+    display: none;
+  }
+
+  .project-container h2 {
+    line-height: 1.2;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 360px ===== */
+@media only screen and (max-width: 360px) {
+  .navbar {
+    width: fit-content;
+    gap: 60px;
+  }
+  .hero_text {
+    margin-left: 20px;
+  }
+  .services-header h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: -35px 0px 20px 0px;
+  }
+  .project-container h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: -5px 0px -30px 0px;
+  }
+  .swiper-slider-button {
+    margin-top: 18px;
+  }
+  .experience {
+    width: 90px;
+    height: 90px;
+    bottom: 0px;
+    right: 0px;
+  }
+  .experience h1 {
+    font-size: 25px;
+  }
+  .experience p {
+    font-size: 10px;
+  }
+  .hero_text {
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-cta {
+    width: 100%;
+    max-width: 350px;
+  }
+  .footer-cta h2 {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .logoi {
+    width: 320px;
+  }
+  .footer-columns {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-col hr {
+    width: 100px;
+  }
+  .footer-col li {
+    font-size: 15px;
+  }
+
+  .services-card {
+    width: 90vw;
+  }
+
+  .about-us-image img {
+    width: 260px;
+    height: auto;
+  }
+  .title {
+    margin: -35px 0px -20px 0px;
+  }
+  .footer-bottom p {
+    font-size: 14px;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 300px ===== */
+@media only screen and (max-width: 330px) {
+  .navbar {
+    width: fit-content;
+    gap: 20px;
+  }
+  .menu-bar {
+    margin-right: 10px;
+  }
+  .hero_text {
+    padding-left: 10px;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  .hero_big_text {
+    font-size: 10px;
+  }
+  .hero_small_text {
+    font-size: 20px;
+  }
+  .hero_big_text {
+    font-size: 35px;
+    margin-left: -20px;
+  }
+  .swiper-slider-button {
+    margin-top: 40px;
+  }
+  .btn {
+    margin-top: -30px;
+  }
+}
+
+/* ===== Here we do responsive for screen less than 250px ===== */
+@media only screen and (max-width: 250px) {
+  .navbar {
+    width: fit-content;
+  }
+  .logo img {
+    width: 150px;
+  }
+  .hero_text {
+    padding-left: 0px;
+    gap: 50px;
+  }
+  .hero_small_text {
+    font-size: 18px;
+    text-align: center;
+  }
+  .hero_big_text {
+    font-size: 36px;
+    text-align: center;
+  }
+  .hero_text {
+    margin-left: -60px;
+  }
+  .hero_big_text {
+    font-size: 53px;
+  }
+  .hero_text {
+    margin-left: -10px;
+  }
+  .hero_big_text {
+    font-size: 45px;
+  }
+  .btn {
+    margin-bottom: 40px;
+  }
+
+  .footer-cta {
+    width: 400px;
+  }
+  .footer-cta h2 {
+    text-align: center;
+  }
+  .footer-main {
+    margin-top: 50px;
+  }
+  .footer-logo-social {
+    gap: 60px;
+    margin-right: 5px;
+  }
+}
