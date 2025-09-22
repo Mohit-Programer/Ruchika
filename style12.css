@@ -866,7 +866,7 @@ footer {
 /* ===== Here we do responsive for screen less than 771px ===== */
 @media only screen and (max-width: 652px) {
   .headersection {
-    background-image: url("hero-section-image.jpg");
+    background-image: url("hero-section-image-1.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
